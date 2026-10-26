@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deep-teal: #124E50;
+  --color-fresh-teal: #4F9990;
+  --color-sponge-yellow: #F5D95B;
+  --color-warm-cream: #FFF9ED;
+  --color-soft-sage: #E4EDE0;
+  --color-dark-charcoal: #263634;
+
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFF9ED;
+  color: #263634;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Organic floating and pulse keyframe animations */
+@keyframes gentle-float-1 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes gentle-float-2 {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(-3deg);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 14px 0 rgba(245, 217, 91, 0.35);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 8px 22px 0 rgba(245, 217, 91, 0.6);
+  }
+}
+
+/* Shimmer beam across CTA button */
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  20%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+/* Subtle breathing glow for CTA */
+@keyframes cta-glow {
+  0%, 100% {
+    box-shadow: 0 10px 25px -4px rgba(18, 78, 80, 0.3), 0 4px 10px -2px rgba(18, 78, 80, 0.15);
+  }
+  50% {
+    box-shadow: 0 16px 35px -4px rgba(18, 78, 80, 0.45), 0 6px 14px -2px rgba(79, 153, 144, 0.35);
+  }
+}
+
+.animate-float-slow {
+  animation: gentle-float-1 7s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: gentle-float-2 9s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+.animate-cta-glow {
+  animation: cta-glow 3.5s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer-sweep 4.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-pulse-subtle,
+  .animate-cta-glow,
+  .animate-shimmer {
+    animation: none !important;
+  }
+}

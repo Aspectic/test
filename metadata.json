@@ -1,0 +1,6 @@
+{
+  "name": "Flora & Bloom — Gut Health Landing Page",
+  "description": "Discover simple gut-health insights and feel-good everyday inspiration, delivered straight to your inbox.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
