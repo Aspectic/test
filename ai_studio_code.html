@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gut Digest | Weekly Newsletter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.02); }
+    }
+    .animate-float {
+      animation: float-slow 4.5s ease-in-out infinite;
+    }
+    .animate-glow {
+      animation: pulse-subtle 3s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-[#FDE047] selection:text-slate-900">
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto w-full px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-2.5">
+      <div class="w-9 h-9 rounded-xl bg-[#0F5B5C] flex items-center justify-center text-[#FDE047] font-bold text-lg shadow-sm">
+        🌱
+      </div>
+      <span class="text-xl font-bold tracking-tight text-[#0F5B5C]">The Gut Digest</span>
+    </div>
+
+    <div class="hidden sm:flex items-center gap-2 text-xs font-semibold text-[#0F5B5C] bg-[#0F5B5C]/10 px-3.5 py-1.5 rounded-full">
+      <span class="w-2 h-2 rounded-full bg-[#0D9488]"></span>
+      Published Every Thursday
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="max-w-6xl mx-auto px-6 py-8 md:py-14 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center flex-grow">
+    
+    <!-- Left Column: Content & Form -->
+    <div class="lg:col-span-7 space-y-6">
+
+      <!-- Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FDE047]/25 border border-[#FDE047] text-slate-900 text-xs font-bold tracking-wide">
+        <span>📬</span>
+        <span>THE #1 WEEKLY GUT HEALTH NEWSLETTER</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-black text-[#0F5B5C] tracking-tight leading-[1.12]">
+        Master your microbiome. <br />
+        <span class="text-[#0D9488] underline decoration-[#FDE047] decoration-4 underline-offset-4">
+          One weekly email at a time.
+        </span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-base sm:text-lg text-slate-600 max-w-xl leading-relaxed">
+        No dense medical jargon, no endless supplement pitches. Just science-backed tips on debloating, gut-brain connection, and digestion—digestible in 3 minutes.
+      </p>
+
+      <!-- Sign Up Form Box -->
+      <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-xl shadow-teal-950/5 border border-teal-100 max-w-lg">
+        <form class="space-y-3.5" onsubmit="event.preventDefault();">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">First Name</label>
+              <input 
+                type="text" 
+                placeholder="Sarah" 
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D9488] focus:border-transparent transition-all"
+                required 
+              />
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+              <input 
+                type="email" 
+                placeholder="sarah@example.com" 
+                class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0D9488] focus:border-transparent transition-all"
+                required 
+              />
+            </div>
+          </div>
+
+          <!-- Sponge Yellow CTA Button -->
+          <button 
+            type="submit" 
+            class="w-full py-4 px-6 rounded-xl bg-[#FDE047] hover:bg-[#FACC15] active:scale-[0.99] text-slate-950 font-extrabold text-base tracking-wide shadow-lg shadow-yellow-300/40 transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer">
+            <span>SIGN UP FOR THE NEWSLETTER</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Newsletter Guarantees -->
+        <div class="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Always free
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            Zero spam
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+            1-click unsubscribe
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Content Preview Bullets -->
+      <div class="pt-2">
+        <p class="text-xs font-bold uppercase tracking-wider text-[#0F5B5C] mb-2.5">What arrives every Thursday:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-lg">
+          <div class="p-3 bg-white/70 border border-teal-100 rounded-xl text-left">
+            <span class="text-base">🔬</span>
+            <p class="font-bold text-xs text-slate-900 mt-1">1 Science Digest</p>
+            <p class="text-[11px] text-slate-500">New microbiome study explained</p>
+          </div>
+          <div class="p-3 bg-white/70 border border-teal-100 rounded-xl text-left">
+            <span class="text-base">🥑</span>
+            <p class="font-bold text-xs text-slate-900 mt-1">1 Gut Recipe</p>
+            <p class="text-[11px] text-slate-500">Fiber & prebiotic fuel ideas</p>
+          </div>
+          <div class="p-3 bg-white/70 border border-teal-100 rounded-xl text-left">
+            <span class="text-base">⚡️</span>
+            <p class="font-bold text-xs text-slate-900 mt-1">1 Debloat Habit</p>
+            <p class="text-[11px] text-slate-500">Simple change to try today</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Visual Area (Drive Image Slot) -->
+    <div class="lg:col-span-5 relative flex justify-center">
+      
+      <!-- Ambient Glow Behind Image -->
+      <div class="absolute -inset-4 bg-gradient-to-tr from-[#0D9488]/20 via-[#FDE047]/25 to-teal-100 rounded-3xl blur-2xl"></div>
+
+      <!-- Main Card Holding the Image -->
+      <div class="relative w-full max-w-md rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-teal-900">
+        
+        <!-- [IMAGE SLOT: Replace this src with your image from Google Drive] -->
+        <img 
+          src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" 
+          alt="Gut health foods and vibrant living" 
+          class="w-full h-[520px] object-cover opacity-95 hover:scale-105 transition-transform duration-700 ease-out"
+        />
+
+        <!-- Floating Badge #1: Social Proof (Top Right) -->
+        <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg border border-teal-50 flex items-center gap-2">
+          <div class="flex -space-x-1.5">
+            <div class="w-6 h-6 rounded-full bg-teal-600 text-white text-[10px] flex items-center justify-center font-bold">L</div>
+            <div class="w-6 h-6 rounded-full bg-[#FACC15] text-slate-900 text-[10px] flex items-center justify-center font-bold">R</div>
+            <div class="w-6 h-6 rounded-full bg-teal-800 text-white text-[10px] flex items-center justify-center font-bold">K</div>
+          </div>
+          <span class="text-[11px] font-bold text-slate-800">14,200+ Readers</span>
+        </div>
+
+        <!-- Floating Badge #2: Animated Newsletter Teaser (Bottom Center) -->
+        <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-teal-100 shadow-xl animate-float">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#0F5B5C] text-[#FDE047] flex items-center justify-center text-lg shadow-sm">
+              ✨
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Next Issue Drops Thursday</p>
+              <p class="text-[11px] text-slate-500">Topic: "3 Fermented Foods That Beat Bloat Fast"</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto w-full px-6 py-6 border-t border-slate-200/60 text-center text-xs text-slate-500">
+    © 2025 The Gut Digest. All rights reserved. Built for gut wellness and daily vitality.
+  </footer>
+
+</body>
+</html>
